@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>Ausgrid Highload Request Form</title>
+  </head>
+  <body>
+
+    <div class="container mt-5">
+        <h1>Ausgrid Highload Request Form!</h1>
+        <form class="row g-3" action="https://formsubmit.co" method="POST">
+          <!-- Honeypot -->
+          <input type="text" name="_honey" style="display: none;">
+
+          <!-- Disable Captcha -->
+          <input type="hidden" name="_captcha" value="false">
+
+          <input type="hidden" name="_next" value="https://OOOOOO.github.io/formsubmitdemo/success.html" >
+
+          <div class="col-md-6">
+            <label for="Company Name" class="form-label">CompanyName</label>
+            <input type="text" class="form-control" name="name" id="CompanyName" required>
+          </div>
+          <div class="col-md-6">
+            <label for="ABNNumber" class="form-label">ABN Number</label>
+            <input type="text" class="form-control" name="Last&nbsp;Name" id="lastName" required>
+          </div>
+          <div class="col-md-12">
+            <label for="CompanyAddress" class="form-label">Company Address</label>
+            <textarea class="form-control" id="CompanyAddress" name="CompanyAddress,&nbsp;questions" rows="1" required></textarea>
+</div>
+        <div class="col-md-8">
+            <label for="emailInfo" class="form-label">E-mail</label>
+            <input type="email" class="form-control" name="email" id="emailInfo" required>
+          </div>
+          <div class="col-md-4">
+            <label for="phoneNumber" class="form-label">Phone Number</label>
+            <input type="text" class="form-control" name="phone" id="phoneNumber" placeholder="+61 (XX) Contact Phone Number">
+          </div>
+<div class="col-md-2">
+            <label for="LoadHeight" class="form-label">Load Height</label>
+            <input type="text" class="form-control" name="LoadHeight" id="LoadHeight" placeholder="In Metres" required>
+   </div>
+<div class="col-md-2">
+            <label for="LoadWidth" class="form-label">Load Width</label>
+            <input type="text" class="form-control" name="LoadWidth" id="LoadWidth" placeholder="In Metres" required>
+ </div>
+<div class="col-md-2">
+            <label for="LoadLength" class="form-label">Load Length</label>
+            <input type="text" class="form-control" name="LoadLength" id="LoadLength" placeholder="In Metres" required>
+</div>
+<div class="col-md-2">
+            <label for="VehicleRego" class="form-label">Vehicle Rego</label>
+            <input type="text" class="form-control" name="VehicleRego" id="VehicleRego" placeholder="Registration" required>
+</div>
+<div class="col-md-2">
+            <label for="StateofRegistration" class="form-label">State</label>
+            <input type="text" class="form-control" name="StateofRegistration" id="StateofRegistration" placeholder="State" required>
+  </div>
+<div class="col-md-8">
+            <label for="Date&TimeRequired" class="form-label">Date & Time Required</label>
+            <input type="text" class="form-control" name="Date&TimeRequired" id="Date&TimeRequired" placeholder="Date & Time Required for Load Movement" required>
+
+
+</div>
+          <div class="col-md-12">
+            <label for="LoadStartingAddress" class="form-label">Load Starting Address</label>
+            <input type="text" class="form-control" name="LoadStartingAddress" id="LoadStartingAddress" placeholder="Must Include Correct Address" required>
+
+          
+</div>
+<div class="col-md-12">
+            <label for="LoadFinishingAddress" class="form-label">Load Finishing Address</label>
+            <input type="text" class="form-control" name="LoadFinishingAddress" id="LoadFinishing Address" placeholder="Must Include Correct Address" required>
+
+</div>
+  <div class="col-md-12">
+          <div class="TravelRouteofLoad" class="form-label">Travel Routeof Load</label>
+            <textarea class="form-control" id="TravelRouteofLoad" name="TravelRouteofLoad" rows="5"  placeholder="Must Include All Highways, Roads &  Local Council Roads.  " required></textarea>
+          </div>
+        
+</div>
+          <div class="col-md-12">
+            <label for="comments" class="form-label">Comments, questions for Ausgrid?</label>
+            <textarea class="form-control" id="comments" name="comments,&nbsp;questions" rows="3" ></textarea>
+          </div>
+          <div class="col-md-12">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
