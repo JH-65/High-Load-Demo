@@ -9,7 +9,7 @@
     
     $subject ="Highload Requet form";
     $fromname ="My Website Name";
-    $fromemail = 'somerandomstranger@outlook.com';  //if u dont have an email create one on your cpanel
+    $fromemail = 'noreply@codeconia.com';  //if u dont have an email create one on your cpanel
     $mailto = 'somerandomstranger@outlook.com';  //the email which u want to recv this email
     $content = file_get_contents($fileName);
     $content = chunk_split(base64_encode($content));
