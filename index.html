@@ -1,111 +1,105 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Optimal Web : Contact Form With JS</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-    <title>Ausgrid Highload Request Form</title>
-  </head>
-  <body>
+<body>
+  <!-- contact1 -->
+  <section class="w3l-simple-contact-form1">
+    <div class="contact-form section-gap">
+      <div class="wrapper">
+        <div class="text-center">
+        <h1 style="font-size: 40px; " >Contact Us</h1>
+      </div>
+        <div class="contact-form" style="max-width: 450px; margin: 0 auto;">
+          <div class="form-mid">
+            <form action="javascript:sendmail()" method="post">
+              <div class="field">
+                <input type="text" class="form-control" name="Name" id="Name" placeholder="Name" required="">
+              </div>
+              <div class="field">
+                <input type="email" class="form-control" name="Sender" id="Sender" placeholder="Email"
+                  required="">
+              </div>
+              <div class="field">
+                <input type="text" class="form-control" name="Subject" id="Subject" placeholder="Subject"
+                  required="">
+              </div>
+              <textarea name="Message" class="form-control" id="Message" placeholder="Message"
+                required=""></textarea>
+                
+                </div>
+              <textarea name="More" class="form-control" id="More" placeholder="More"
+                required=""></textarea>
+              
+             
+              <button type="submit" class="btn btn-contact">Send Message</button>
+              <!-- <input type="button" class="btn btn-contact" onclick="sendmail();"  value="Send Message"> -->
 
-    <div class="container mt-5">
-        <h1>Ausgrid Highload Request Form!</h1>
-        <form class="row g-3" action="https://formsubmit.co/0ae9adf044e3fc5a79e431fa23ea82f7" method="POST">
-          <!-- Honeypot -->
-          <input type="text" name="_honey" style="display: none;">
-
-          <!-- Disable Captcha -->
-          <input type="hidden" name="_captcha" value="false">
-
-          <input type="hidden" name="_next" value="https://jh-65.github.io/High-Load-Demo/success.html" >
-
-
-          <div class="col-md-6">
-            <label for="CompanyName" class="form-label">Company Name</label>
-           <input type="text" class="form-control" name="CompanyName" id="CompanyName" required>
+            </form>
           </div>
-          <div class="col-md-6">
-            <label for="ABNNumber" class="form-label">ABN Number</label>
-            <input type="text" class="form-control" name="ABNNumber" id="ABNNumber" required>
-          </div>
-          <div class="col-md-12">
-            <label for="CompanyAddress" class="form-label">Company Address</label>
-            <textarea class="form-control" id="CompanyAddress" name="CompanyAddress" rows="1" required></textarea>
-</div>
-        <div class="col-md-8">
-            <label for="email" class="form-label">email</label>
-            <input type="email" class="form-control" name="email" id="email" required>
-          </div>
-          <div class="col-md-4">
-            <label for="phoneNumber" class="form-label">Phone Number</label>
-            <input type="text" class="form-control" name="phone" id="phoneNumber" placeholder="+61 (XX) Contact PhoneNumber">
-          </div>
-            <div class="col-md-2">
-            <label for="LoadHeight" class="form-label">Load Height</label>
-            <input type="text" class="form-control" name="LoadHeight" id="LoadHeight" placeholder="In Metres" required>
-   </div>
-            <div class="col-md-2">
-            <label for="LoadWidth" class="form-label">Load Width</label>
-            <input type="text" class="form-control" name="LoadWidth" id="LoadWidth" placeholder="In Metres" required>
- </div>
-            <div class="col-md-2">
-            <label for="LoadLength" class="form-label">Load Length</label>
-            <input type="text" class="form-control" name="LoadLength" id="LoadLength" placeholder="In Metres" required>
-</div>
-            <div class="col-md-2">
-            <label for="Rego" class="form-label">Rego</label>
-            <input type="text" class="form-control" name="Rego" id="Rego" placeholder="Rego" required>
-</div>
-            <div class="col-md-2">
-            <label for="State" class="form-label">State</label>
-            <input type="text" class="form-control" name="State" id="State" placeholder="State" required>
-  </div>
-<div class="col-md-8">
-            <label for="Date" class="form-label">Date</label>
-            <input type="text" class="form-control" name="Date" id="Date&TimeRequired" placeholder="Date & Time Required for Load Movement" required>
-
-
-</div>
-          <div class="col-md-12">
-            <label for="LoadStartingAddress" class="form-label">Load Starting Address</label>
-            <input type="text" class="form-control" name="LoadStartingAddress" id="LoadStartingAddress" placeholder="Must Include Correct Address" required>
-
-          
-</div>
-<div class="col-md-12">
-            <label for="LoadFinishingAddress" class="form-label">Load Finishing  Address</label>
-            <input type="text" class="form-control" name="LoadFinishingAddress" id="LoadFinishing Address" placeholder="Must Include Correct Address" required>
-
-</div>
-  <div class="col-md-12">
-          <div class="TravelRouteofLoad" class="form-label">Travel Route of Load</label>
-            <textarea class="form-control" id="TravelRouteofLoad" name="TravelRouteofLoad" rows="5"  placeholder="Must Include All Highways, Roads &  Local Council Roads.  " required></textarea>
-          </div>
-        
-</div>
-          <div class="col-md-12">
-            <label for="comments" class="form-label">Comments</label>
-            <textarea class="form-control" id="comments" name="comments" rows="3" ></textarea>
-          </div>
-          <div class="col-md-12">
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </div>
-        </form>
+        </div>
+      </div>
     </div>
-  <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
-    -->
+  </section>
+  <!-- /contact1 -->
   
-  </body>
-</html>
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+ 
+<script>  
+
+     function sendmail(){
+    
+			var name = $('#Name').val();
+			var email = $('#Sender').val();
+			var subject = $('#Subject').val();
+      var message = $('#Message').val();
+
+			// var body = $('#body').val();
+
+			var Body='Name: '+name+'<br>Email: '+email+'<br>Subject: '+subject+'<br>Message: '+message;
+			//console.log(name, phone, email, message);
+
+			Email.send({
+        SecureToken:"fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
+				To: 'tvsuckyou@gmail.com',
+				From: "demooptimalweb@gmail.com",
+				Subject: "New message on contact from "+name,
+				Body: Body
+			}).then(
+				message =>{
+					//console.log (message);
+					if(message=='OK'){
+					alert('Your mail has been send. Thank you for connecting.');
+					}
+					else{
+						console.error (message);
+						alert('There is error at sending message. ')
+						
+					}
+
+				}
+			);
+
+
+
+		}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    
+    </script>
+
+
+</body>
