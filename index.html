@@ -1,99 +1,55 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0">
-
-<a href="mailto:((Email))" style="text-decoration:none">((Email))</a>
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-
-    <title>Ausgrid Highload Request Form</title>
-  </head>
-  <body>
-
-    <div class="container mt-5">
-        <h1>Ausgrid Highload Request Form!</h1>
-        <form class="row g-3" action="https://formsubmit.co/0ae9adf044e3fc5a79e431fa23ea82f7"" method="POST">
-          <!-- Honeypot -->
-          <input type="text" name="_honey" style="display: none;">
-
-          <!-- Disable Captcha -->
-          <input type="hidden" name="_captcha" value="false">
-
-          <input type="hidden" name="_next" value="https://jh-65.github.io/High-Load-Demo/success.html" >
-
-
-          <div class="col-md-6">
-            <label for="CompanyName" class="form-label">Company Name</label> <input type="text" class="form-control" name="CompanyName" id="CompanyName" >
-          </div>
-          <div class="col-md-6">
-            <label for="ABNNumber" class="form-label">ABN Number</label> <input type="text" class="form-control" name="ABNNumber" id="ABNNumber" >
-          </div>
-          <div class="col-md-12">
-            <label for="CompanyAddress" class="form-label">Company Address</label> <textarea class="form-control" id="CompanyAddress" name="CompanyAddress" rows="1" ></textarea>
-</div>
-        <div class="col-md-8">
-            <label for="email" class="form-label">email</label> <input type="email" class="form-control" name="email" id="email" >
-          </div>
-          <div class="col-md-4"> <label for="phoneNumber" class="form-label">Phone Number</label>
-            <input type="text" class="form-control" name="phone" id="phoneNumber" placeholder="+61 (XX) Contact PhoneNumber">
-          </div>
-            <div class="col-md-2">
-            <label for="LoadHeight" class="form-label">Load Height</label> <input type="text" class="form-control" name="LoadHeight" id="LoadHeight" placeholder="In Metres" >
-   </div>
-            <div class="col-md-2">
-            <label for="LoadWidth" class="form-label">Load Width</label>
-            <input type="text" class="form-control" name="LoadWidth" id="LoadWidth" placeholder="In Metres" >
- </div>
-            <div class="col-md-2">
-            <label for="LoadLength" class="form-label">Load Length</label> <input type="text" class="form-control" name="LoadLength" id="LoadLength" placeholder="In Metres" >
-</div>
-            <div class="col-md-2">
-            <label for="Rego" class="form-label">Rego</label> <input type="text" class="form-control" name="Rego" id="Rego" placeholder="Rego" >
-</div>
-            <div class="col-md-2"> <label for="State" class="form-label">State</label> <input type="text" class="form-control" name="State" id="State" placeholder="State" >
-  </div>
-<div class="col-md-8">
-            <label for="Date" class="form-label">Date</label><input type="text" class="form-control" name="Date" id="Date&TimeRequired" placeholder="Date & Time Required for Load Movement" >
-
-
-</div>
-          <div class="col-md-12">
-            <label for="LoadStartingAddress" class="form-label">Load Starting Address</label>
-            <input type="text" class="form-control" name="LoadStartingAddress" id="LoadStartingAddress" placeholder="Must Include Correct Address" >
-
-          
-</div>
-<div class="col-md-12">
-           <label for="LoadFinishingAddress" class="form-label">Load Finishing  Address</label><input type="text" class="form-control" name="LoadFinishingAddress" id="LoadFinishing Address" placeholder="Must Include Correct Address" >
-
-</div>
-  <div class="col-md-12">
-          <div class="TravelRouteofLoad" class="form-label">Travel Route of Load</label> <textarea class="form-control" id="TravelRouteofLoad" name="TravelRouteofLoad" rows="5"  placeholder="Must Include All Highways, Roads &  Local Council Roads.  " ></textarea>
-          </div>
+    <head>
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+       
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <title>HTML Form to Google Sheets Ausgrid Today</title>
+        </head>
+    <body>
+    <div class="container py-5">
+        <div class="row">
+        </div class="col-lg-5 col-md-8 mx-auto shadow border bg white p-4 rounded">
+        <h2 class="text-centre fw-bold mb-3">Contact Us</h2>
+        <form name="google sheet">
+        <div class="form-group mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="text" "email" name="email" class="form-control" placeholder="Enter your email address" required>
+            </div>
+            <div class="form-group mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" name="message" class="form-control" placeholder="Enter your message"rows=5 required></textarea>
+        </div>
+            <div>
+            <button class="btn btn-primary me-2" type="submit">Send Message !</button>
+                <button class="btn btn-danger" type="submit">Reset the form !</button>
+            </div>
+        </form> 
+        </div>
+      
+    
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         
-</div>
-          <div class="col-md-12">
-            <label for="comments" class="form-label">Comments</label> <textarea class="form-control" id="comments" name="comments" rows="3" ></textarea>
-          </div>
-          <div class="col-md-12">
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </div>
-        </form>
-    </div>
-  <!-- Optional JavaScript; choose one of the two! -->
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        
+        <script>
+  const scriptURL = '<https://script.google.com/macros/s/AKfycbwLOU_FB7v-Oi7TxgW_VL4OQLtLPZ1jYkBRJD3vVrdevwbzoCUl6dOxUxYj2BQOo4vroA/exec>'
+  const form = document.forms['google sheet']
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
-    -->
-  
-  </body>
-</html>
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+        
+    </body>
+    <html>
+ 
