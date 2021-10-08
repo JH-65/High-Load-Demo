@@ -1,116 +1,117 @@
- 
-         
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <style>
-            .register .nav-tabs .nav-link:hover{
-                border: none;
-            }
-            .text-align{
-                margin-top: -3%;
-                margin-bottom: -9%;
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0">
 
-                padding: 10%;
-                margin-left: 30%;
-            }
-            .form-new{
-                margin-right: 22%;
-                margin-left: 20%;
-            }
-            .register-heading{
-                margin-left: 21%;
-                margin-bottom: 10%;
-                color: #e9ecef;
-            }
-            .register-heading h1{
-                margin-left: 21%;
-                margin-bottom: 10%;
-                color: #e9ecef;
-            }
-            .register{
-                background: -webkit-linear-gradient(left, #055a4f, #00c6ff);
-                margin-top: 3%;
-                padding: 3%;
-                border-radius: 2.5rem;
-            }
-            .btnSubmit
-            {
-                width: 50%;
-                border-radius: 1rem;
-                padding: 1.5%;
-                color: #fff;
-                background-color: #03612e;
-                border: none;
-                cursor: pointer;
-                margin-right: 6%;
-                color: rgb(246, 246, 252);
-                margin-top: 4%;
-            }
-    </style>
+      <title>Ausgrid Highload Request Form</title> 
+      
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-</head>
-<body>
+   
+  </head>
+  <body>
+
+   <div class="container mt-5">
+        <h1>Ausgrid Highload Request Form!</h1>
+        <form class="row g-3" action=method="post" autocomplete="off" name="google-sheet">
+          
+
+
+          <div class="col-md-6">
+            <label for="Name" class="form-label">Company Name</label> <input type="text" class="form-control" name="Name" id="Name"  placeholder="Company Name" >
+          </div>
+          <div class="col-md-6">
+            <label for="ABN" class="form-label">ABN Number</label> <input type="text" class="form-control" name="ABN" id="ABN" placeholder="ABN required">
+          </div>
+          <div class="col-md-12">
+            <label for="Address" class="form-label">Company Address</label> <textarea class="form-control" id="Address" name="Address" rows="1" placeholder="Full Company Address"></textarea>
+</div>
+        <div class="col-md-8">
+            <label for="Email" class="form-label">email</label> <input type="Email" class="form-control" name="Email" id="Email" placeholder="Company Contact Email" >
+          </div>
+          <div class="col-md-4"> <label for="Phone" class="form-label">Phone Number</label>
+            <input type="text" class="form-control" name="Phone" id="Phone" placeholder="+61 (XX) Contact PhoneNumber">
+          </div>
+            <div class="col-md-2">
+            <label for="Height" class="form-label">Load Height</label> <input type="text" class="form-control" name="Height" id="Height" placeholder="In Metres" >
+   </div>
+            <div class="col-md-2">
+            <label for="Width" class="form-label">Load Width</label>
+            <input type="text" class="form-control" name="Width" id="Width" placeholder="In Metres" >
+ </div>
+            <div class="col-md-2">
+            <label for="Length" class="form-label">Load Length</label> <input type="text" class="form-control" name="Length" id="Length" placeholder="In Metres" >
+</div>
+            <div class="col-md-2">
+            <label for="Rego" class="form-label">Rego</label> <input type="text" class="form-control" name="Rego" id="Rego" placeholder="Rego" >
+</div>
+            <div class="col-md-2"> <label for="State" class="form-label">State</label> <input type="text" class="form-control" name="State" id="State" placeholder="State" >
+  </div>
+        
+          <div class="col-md-6">
+            <label for="Loaddetails" class="form-label">Load Details</label> <input type="text" class="form-control" name="Loaddetails" id="Loaddetails" placeholder="Load Details/type">    
+          </div>   
+<div class="col-md-6">
+            <label for="Date" class="form-label">Date</label><input type="text" class="form-control" name="Date" id="Date&TimeRequired" placeholder="Date & Time Required for Load Movement" >
+
+
     
-<div class="container register">
-            <div class="row">
-                <div class="col-md-12">
-                        <div class="tab-pane fade show active text-align form-new" id="home" role="tabpanel" aria-labelledby="home-tab">
-                            <h3 class="register-heading">Highload Request Enquiry Form</h3>
-                            <div class="row register-form">
-                                <div class="col-md-12">
-                                    <form method="post" autocomplete="off" name="google-sheet">
-                                        <div class="form-group">
-                                            <input type="text" name="Name" class="form-control" placeholder="Your Name *" value="" required=""/>
-                                        </div>
-                                        <div class="form-group">
-                                            
-                                            <input type="text" name="Email" class="form-control" placeholder="Your Email *" value="" required=""/>
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="number" name="Phone" class="form-control" placeholder="Your Contact Number *" value="" required=""/>
-                                        </div>
-                                        
-                                    <div class="form-group">
-                                            <input type="text" name="message" class="form-control" placeholder="Your Message Here *" value="" required=""/>
-                                        
-                                        </div>
-                                        
-                                            <div class="form-group">
-                                            <input type="text" name="message1" class="form-control" placeholder="Your Message Here *" value="" required=""/>
-                                        </div>
-                                        
-                                        <div class="form-group">
-                                            <input type="submit" name="submit" class="btnSubmit btn-block" value="Submit" />
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                </div>
-            </div>
-        </div>
+</div>
+          <div class="col-md-12">
+            <label for="StartingPoint" class="form-label">Load Starting Address</label>
+            <input type="text" class="form-control" name="StartingPoint" id="StartingPoint" placeholder="Must Include Full Correct Address" >
+
           
-          <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbyZ5N8F-u_ghL4akYiZj3th78OWmue_GMS3ce73JbvuvUUMP7we/exec'
+</div>
+<div class="col-md-12">
+           <label for="FinishingPoint" class="form-label">Load Finishing  Address</label><input type="text" class="form-control" name="FinishingPoint" id="FinishingPoint" placeholder="Must Include Full Correct Address" >
+
+</div>
+  <div class="col-md-12">
+          <div class="TravelRoute" class="form-label">Travel Route of Load</label> <textarea class="form-control" id="TravelRouted" name="TravelRoute" rows="5"  placeholder="Must Include All Highways, Roads &  Local Council Roads.  " ></textarea>
+          </div>
+        
+
+          <div class="col-md-12">
+            <label for="Comments" class="form-label">Comments</label> <textarea class="form-control" id="Comments" name="Comments" rows="3" ></textarea>
+          </div>
+          <div class="col-md-12">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+    </div>
+    
+    
+    
+  <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    
+    <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbz9TkHcRRgZBi3tEoQn2Q5WiLT68VTg8P_-zlQBn7TmpFlshfM7v3hBPggPeP3yXLhxFA/exec'
             const form = document.forms['google-sheet']
-          
+    
             form.addEventListener('submit', e => {
               e.preventDefault()
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => alert("Your Request has been Submitted and will be sent for processed soon..."))
+                .then(response => alert("Your Request has been Submitted and sent for processing..."))
                 .catch(error => console.error('Error!', error.message))
             })
-          </script>
-
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-</body>
-</html>
             
-         
     
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+      
+      </script>
+      <script
+
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+  
+  </body>
+</html>
